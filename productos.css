@@ -1,0 +1,24 @@
+#productos {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.producto {
+    display: flex;
+    align-items: flex-start; 
+    margin-bottom: 20px; 
+    justify-content: space-between; 
+}
+
+.producto-imagen {
+    width: 100px; 
+    height: auto; 
+    margin-left: 15px; 
+    border: 2px solid #760aff; 
+    border-radius: 5px; 
+    padding: 5px; 
+}
+
+.producto-descripcion {
+    flex: 1; 
+}

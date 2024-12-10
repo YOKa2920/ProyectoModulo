@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cita Médica</title>
+    <link rel="stylesheet" type="text/css" href="principal.css">
+    <link rel="stylesheet" href="Formulario-cita.css">
+</head>
+<body>
+    <header>
+        <h1>Solicita tu Cita Médica</h1>
+    </header>
+
+    <section id="formulario-cita">
+        <h2>Completa el siguiente formulario</h2>
+        <form action="enviar_cita.php" method="POST">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Número de Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="fecha">Fecha de la Cita:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="hora">Hora de la Cita:</label>
+            <input type="time" id="hora" name="hora" required>
+
+            <label for="comentarios">Comentarios Adicionales:</label>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+
+            <button type="submit">Enviar Cita</button>
+            <button type="reset">Borrar Registro</button>
+            <a href="principal.html"><button type="button">Volver al Inicio</button></a>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Farmacia Calvillo. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
